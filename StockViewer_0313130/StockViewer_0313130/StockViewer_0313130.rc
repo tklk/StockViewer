@@ -1,0 +1,604 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文 (繁體，台灣) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#include ""res\\StockViewer_0313130.rc2""  // 非 Microsoft Visual C++ 編輯過的資源\r\n"
+    "#include ""l.CHT\\afxres.rc""      // 標準元件\r\n"
+    "#include ""l.CHT\\afxprint.rc""    // 列印/預覽列印資源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\StockViewer_0313130.ico"
+IDR_StockViewer_031TYPE ICON                    "res\\StockViewer_0313130Doc.ico"
+IDR_info1               ICON                    "res\\open.ico"
+IDR_info2               ICON                    "res\\next.ico"
+IDR_info3               ICON                    "res\\last.ico"
+IDR_info4               ICON                    "res\\previous.ico"
+IDR_info5               ICON                    "res\\first.ico"
+IDR_info6               ICON                    "res\\KD.ico"
+IDR_info7               ICON                    "res\\M.ico"
+IDR_info8               ICON                    "res\\clean.ico"
+IDR_info9               ICON                    "res\\day.ico"
+IDR_info10              ICON                    "res\\week.ico"
+IDR_info11              ICON                    "res\\month.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 18, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_First
+    BUTTON      ID_Previous
+    BUTTON      ID_Next
+    BUTTON      ID_Last
+    SEPARATOR
+    BUTTON      ID_None
+    BUTTON      ID_KD
+    BUTTON      ID_MACD
+    SEPARATOR
+    BUTTON      ID_Day
+    BUTTON      ID_Week
+    BUTTON      ID_Month
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "檔案(&F)"
+    BEGIN
+        MENUITEM "開新檔案(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開啟舊檔(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "列印設定(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使用的檔案",                     ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "結束(&X)",                      ID_APP_EXIT
+    END
+    POPUP "檢視(&V)"
+    BEGIN
+        MENUITEM "工具列(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "狀態列(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於 StockViewer_0313130(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_StockViewer_031TYPE MENU
+BEGIN
+    POPUP "檔案(&F)"
+    BEGIN
+        MENUITEM "開新檔案(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開啟舊檔(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+        MENUITEM "儲存檔案(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存新檔(&A)...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "預覽列印(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "列印設定(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使用的檔案",                     ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "結束(&X)",                      ID_APP_EXIT
+    END
+    POPUP "編輯(&E)"
+    BEGIN
+        MENUITEM "復原(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪下(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "複製(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "看股(&S)"
+    BEGIN
+        MENUITEM "Previous",                    ID_Previous
+        MENUITEM "Next",                        ID_Next
+        MENUITEM "First",                       ID_First
+        MENUITEM "Last",                        ID_Last
+    END
+    POPUP "技術指標(&Z)"
+    BEGIN
+        MENUITEM "None",                        ID_None
+        MENUITEM "KD",                          ID_KD
+        MENUITEM "MACD",                        ID_MACD
+    END
+    POPUP "數據週期(&T)"
+    BEGIN
+        MENUITEM "Day",                         ID_Day
+        MENUITEM "Week",                        ID_Week
+        MENUITEM "Month",                       ID_Month
+    END
+    POPUP "介面(&I)"
+    BEGIN
+        MENUITEM "White",                       ID_White
+        MENUITEM "Black",                       ID_Black
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於 StockViewer_0313130(&A)...", ID_APP_ABOUT
+    END
+    POPUP "檢視(&V)"
+    BEGIN
+        MENUITEM "工具列(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "狀態列(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "視窗(&W)"
+    BEGIN
+        MENUITEM "開新視窗(&N)",                    ID_WINDOW_NEW
+        MENUITEM "重疊顯示(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "並排顯示(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列圖示(&A)",                    ID_WINDOW_ARRANGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "關於 StockViewer_0313130"
+FONT 9, "????", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "StockViewer_0313130, 1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,42,47,114,8
+    DEFPUSHBUTTON   "確定",IDOK,114,41,50,14,WS_GROUP
+END
+
+IDD_stockinfo1 DIALOGEX 0, 0, 311, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "看盤系統使用說明"
+FONT 12, "Microsoft YaHei UI", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,254,157,50,14
+    PUSHBUTTON      "上一步",IDD_ABOUTBOX,198,157,50,14
+    ICON            IDR_info1,IDC_STATIC,66,35,20,20
+    LTEXT           "2. 點選檔案(F) → 開啟舊檔(O)",IDC_STATIC,17,54,107,8
+    LTEXT           "如何載入股票資訊：",IDC_STATIC,17,17,65,8
+    LTEXT           "3. 鍵盤熱建 Ctrl+O 開啟資料",IDC_STATIC,17,69,107,8
+    LTEXT           "1. 點選左上角",IDC_STATIC,17,38,40,10,SS_NOPREFIX
+    LTEXT           "此圖像開啟資料",IDC_STATIC,90,38,48,10,SS_NOPREFIX
+END
+
+IDD_stockinfo2 DIALOGEX 0, 0, 311, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "看盤系統使用說明"
+FONT 12, "Microsoft YaHei UI", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,254,157,50,14
+    PUSHBUTTON      "上一步",IDD_stockinfo1,198,157,50,14
+    LTEXT           "1. 點選左上角工具列中的圖式",IDC_STATIC,17,39,86,10,SS_NOPREFIX
+    LTEXT           "2. 點選看股(S)",IDC_STATIC,17,54,41,8
+    LTEXT           "如何查詢歷史資料：",IDC_STATIC,17,17,65,8
+    LTEXT           "3. 鍵盤熱鍵  左, 右, Home, End",IDC_STATIC,17,68,92,8
+    ICON            IDR_info2,IDC_STATIC,150,89,20,20
+    ICON            IDR_info3,IDC_STATIC,213,88,20,20
+    ICON            IDR_info5,IDC_STATIC,17,89,20,20
+    ICON            IDR_info4,IDC_STATIC,83,89,20,20
+    LTEXT           "● 歷史資料第一天",IDC_STATIC,18,108,52,8
+    LTEXT           "● 往前一天",IDC_STATIC,84,108,34,8
+    LTEXT           "● 往後一天",IDC_STATIC,151,108,32,8
+    LTEXT           "● 歷史資料最後一天",IDC_STATIC,215,108,59,8
+    LTEXT           "● 看股(S) → First",IDC_STATIC,18,123,52,8
+    LTEXT           "● Home鍵",IDC_STATIC,18,137,32,8
+    LTEXT           "● 看股(S) → Previous",IDC_STATIC,84,123,63,8
+    LTEXT           "● 方向左鍵",IDC_STATIC,84,137,32,8
+    LTEXT           "● 看股(S) → Next",IDC_STATIC,151,123,52,8
+    LTEXT           "● 方向右鍵",IDC_STATIC,151,137,32,8
+    LTEXT           "● 看股(S) → Last",IDC_STATIC,215,123,50,8
+    LTEXT           "● End鍵",IDC_STATIC,215,137,32,8
+END
+
+IDD_stockinfo3 DIALOGEX 0, 0, 311, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "看盤系統使用說明"
+FONT 12, "Microsoft YaHei UI", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,254,157,50,14
+    PUSHBUTTON      "上一步",IDD_stockinfo2,198,157,50,14
+    LTEXT           "1. 點選左上角工具列中的圖式",IDC_STATIC,17,39,86,10,SS_NOPREFIX
+    LTEXT           "2. 點選技術指標(Z)",IDC_STATIC,17,54,55,8
+    LTEXT           "如何查看技術指標： KD線,  MACD線",IDC_STATIC,17,17,110,8
+    LTEXT           "3. 鍵盤熱鍵  數字0, 數字1, 數字2",IDC_STATIC,17,68,102,8
+    ICON            IDR_info7,IDC_STATIC,150,89,20,20
+    ICON            IDR_info8,IDC_STATIC,17,89,20,20
+    ICON            IDR_info6,IDC_STATIC,83,89,20,20
+    LTEXT           "● 隱藏所有技術指標",IDC_STATIC,18,108,58,8
+    LTEXT           "● 顯示KD線",IDC_STATIC,84,108,34,8
+    LTEXT           "● 顯示MACD線",IDC_STATIC,151,108,58,8
+    LTEXT           "● 技術指標(Z) →    None",IDC_STATIC,18,123,48,18
+    LTEXT           "● 數字0鍵",IDC_STATIC,18,143,30,8
+    LTEXT           "● 技術指標(Z) → KD",IDC_STATIC,84,123,60,8
+    LTEXT           "● 數字1鍵",IDC_STATIC,84,137,32,8
+    LTEXT           "● 技術指標(Z) →    MACD",IDC_STATIC,151,123,49,17
+    LTEXT           "● 數字2鍵",IDC_STATIC,151,144,32,8
+END
+
+IDD_stockinfo4 DIALOGEX 0, 0, 311, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "看盤系統使用說明"
+FONT 12, "Microsoft YaHei UI", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,254,157,50,14
+    PUSHBUTTON      "上一步",IDD_stockinfo3,198,157,50,14
+    LTEXT           "1. 點選左上角工具列中的圖式",-1,17,39,86,10,SS_NOPREFIX
+    LTEXT           "2. 點選數據週期(T)",-1,17,54,54,8
+    LTEXT           "如何切換數據週期： 日線,  週線,  月線",-1,17,17,113,8
+    LTEXT           "3. 鍵盤熱鍵  F1, F2, F3",-1,17,68,102,8
+    ICON            IDR_info11,-1,150,89,20,20
+    ICON            IDR_info9,-1,17,89,20,20
+    ICON            IDR_info10,-1,83,89,20,20
+    LTEXT           "● 切換成日線",-1,18,108,39,8
+    LTEXT           "● 切換成週線",-1,84,108,41,8
+    LTEXT           "● 切換成月線",-1,151,108,41,8
+    LTEXT           "● 數據週期(T) →    Day",-1,18,123,48,18
+    LTEXT           "● F1鍵",-1,18,143,21,8
+    LTEXT           "● 數據週期(T) →    Week",-1,84,123,48,15
+    LTEXT           "● F2鍵",-1,84,144,32,8
+    LTEXT           "● 數據週期(T) →    Month",-1,151,123,49,16
+    LTEXT           "● F3鍵",-1,151,144,32,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO:  <公司名稱>"
+            VALUE "FileDescription", "StockViewer_0313130"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "StockViewer_0313130.exe"
+            VALUE "LegalCopyright", "TODO: (c) <公司名稱>.  著作權所有，並保留一切權利。"
+            VALUE "OriginalFilename", "StockViewer_0313130.exe"
+            VALUE "ProductName", "TODO:  <產品名稱>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_stockinfo1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_stockinfo2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_stockinfo3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_stockinfo4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失敗。請確認 OLE 程式庫的版本是否正確。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "StockViewer_0313130"
+    IDR_StockViewer_031TYPE "\nStockViewer_031\nStockViewer_031\nStockViewer_0313130 Files (*.csv)\n.csv\nStockViewer0313130.Document\nStockViewer_0313130.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "StockViewer_0313130"
+    AFX_IDS_IDLEMESSAGE     "就緒"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "建立新文件\n開新檔案"
+    ID_FILE_OPEN            "開啟現有文件\n開啟舊檔"
+    ID_FILE_CLOSE           "關閉使用中文件\n關閉檔案"
+    ID_FILE_SAVE            "儲存使用中文件\n儲存檔案"
+    ID_FILE_SAVE_AS         "將使用中文件以新名稱儲存\n另存新檔"
+    ID_FILE_PAGE_SETUP      "變更列印選項\n版面設定"
+    ID_FILE_PRINT_SETUP     "變更印表機及列印選項\n列印設定"
+    ID_FILE_PRINT           "列印使用中文件\n列印"
+    ID_FILE_PRINT_DIRECT    "使用目前選項列印使用中文件\n快速列印"
+    ID_FILE_PRINT_PREVIEW   "顯示整頁\n預覽列印"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "顯示程式資訊、版本號碼及著作權\n關於"
+    ID_APP_EXIT             "結束應用程式; 提示使用者儲存文件\n結束"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "開啟這份文件"
+    ID_FILE_MRU_FILE2       "開啟這份文件"
+    ID_FILE_MRU_FILE3       "開啟這份文件"
+    ID_FILE_MRU_FILE4       "開啟這份文件"
+    ID_FILE_MRU_FILE5       "開啟這份文件"
+    ID_FILE_MRU_FILE6       "開啟這份文件"
+    ID_FILE_MRU_FILE7       "開啟這份文件"
+    ID_FILE_MRU_FILE8       "開啟這份文件"
+    ID_FILE_MRU_FILE9       "開啟這份文件"
+    ID_FILE_MRU_FILE10      "開啟這份文件"
+    ID_FILE_MRU_FILE11      "開啟這份文件"
+    ID_FILE_MRU_FILE12      "開啟這份文件"
+    ID_FILE_MRU_FILE13      "開啟這份文件"
+    ID_FILE_MRU_FILE14      "開啟這份文件"
+    ID_FILE_MRU_FILE15      "開啟這份文件"
+    ID_FILE_MRU_FILE16      "開啟這份文件"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切換至下一窗格\n下一個窗格"
+    ID_PREV_PANE            "切換至上一個窗格\n上一個窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "為使用中的文件開啟另一個視窗\n開新視窗"
+    ID_WINDOW_ARRANGE       "將圖示排列在視窗底部\n排列圖示"
+    ID_WINDOW_CASCADE       "重疊排列視窗\n重疊顯示"
+    ID_WINDOW_TILE_HORZ     "視窗以不重疊的方式顯示\n並排顯示"
+    ID_WINDOW_TILE_VERT     "視窗以不重疊的方式顯示\n並排顯示"
+    ID_WINDOW_SPLIT         "將使用中視窗切割成窗格\n分割視窗"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除選取範圍\n清除"
+    ID_EDIT_CLEAR_ALL       "清除所有的項目\n全部清除"
+    ID_EDIT_COPY            "複製選取項目並放到剪貼簿\n複製"
+    ID_EDIT_CUT             "剪下選取項目並放到剪貼簿\n剪下"
+    ID_EDIT_FIND            "尋找指定的文字\n尋找"
+    ID_EDIT_PASTE           "插入剪貼簿的內容\n貼上"
+    ID_EDIT_REPEAT          "重複上次的動作\n重複"
+    ID_EDIT_REPLACE         "用不同的文字取代指定文字\n取代"
+    ID_EDIT_SELECT_ALL      "選取整份文件\n全選"
+    ID_EDIT_UNDO            "復原上次的動作\n復原"
+    ID_EDIT_REDO            "取消復原上次的動作\n取消復原"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "顯示或隱藏工具列\n切換工具列"
+    ID_VIEW_STATUS_BAR      "顯示或隱藏狀態列\n切換狀態列"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "變更視窗大小"
+    AFX_IDS_SCMOVE          "變更視窗位置"
+    AFX_IDS_SCMINIMIZE      "將視窗縮成一個圖示"
+    AFX_IDS_SCMAXIMIZE      "將視窗放到最大"
+    AFX_IDS_SCNEXTWINDOW    "切換至下一個文件視窗"
+    AFX_IDS_SCPREVWINDOW    "切換至上一個文件視窗"
+    AFX_IDS_SCCLOSE         "關閉使用中視窗並提示使用者儲存文件"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "將視窗還原成標準大小"
+    AFX_IDS_SCTASKLIST      "啟動工作清單"
+    AFX_IDS_MDICHILD        "啟動這個視窗"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "關閉預覽列印模式\n取消預覽"
+END
+
+#endif    // 中文 (繁體，台灣) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#include "res\StockViewer_0313130.rc2"  // 非 Microsoft Visual C++ 編輯過的資源
+#include "l.CHT\afxres.rc"      // 標準元件
+#include "l.CHT\afxprint.rc"    // 列印/預覽列印資源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
